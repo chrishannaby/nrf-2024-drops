@@ -1,3 +1,28 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+name = "nrf-2024-drops"
+client_id = "a03e0dfa08ce8fc3eca4bf5f9de19cd1"
+application_url = "https://wto-ds-outputs-tray.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://wto-ds-outputs-tray.trycloudflare.com/auth/callback",
+  "https://wto-ds-outputs-tray.trycloudflare.com/auth/shopify/callback",
+  "https://wto-ds-outputs-tray.trycloudflare.com/api/auth/callback",
+  "https://wto-ds-outputs-tray.trycloudflare.com/.shopify/graphiql/auth/callback",
+  "http://localhost:8080/callback",
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "nrf-2024-chrishannaby-dev.myshopify.com"

@@ -20,3 +20,12 @@ model Session {
   accessToken String
   userId      BigInt?
 }
+
+model Drop {
+  id         Int      @id @default(autoincrement())
+  title      String
+  shop       String
+  createdAt  DateTime @default(now())
+  startTime  DateTime
+  endTime    DateTime?
+}

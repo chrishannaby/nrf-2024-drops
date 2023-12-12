@@ -1,0 +1,12 @@
+[[extensions]]
+name = "Drop Started"
+type = "flow_trigger"
+handle = "drop-started"
+description = "Runs when a drop starts"
+schema = "../dropSchema.graphql"
+
+[settings]
+
+  [[settings.fields]]
+  type = "schema.Drop"
+  key = "Drop"

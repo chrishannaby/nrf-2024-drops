@@ -1,0 +1,9 @@
+type Product {
+  productId: ID!
+}
+
+type Drop {
+  id: ID!
+  name: String!
+  products: [Product!]!
+}
