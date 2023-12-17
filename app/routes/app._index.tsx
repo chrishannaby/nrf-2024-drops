@@ -11,8 +11,8 @@ import {
 import { authenticate } from "../shopify.server";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  await authenticate.admin(request);
-
+  const { session } = await authenticate.admin(request);
+  console.log(`accessToken: ${session.accessToken}`);
   return null;
 };
 

@@ -8,9 +8,6 @@ export const links = () => [{ rel: "stylesheet", href: indexStyles }];
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const url = new URL(request.url);
-  const { session } = await authenticate.admin(request);
-  console.log("hello");
-  console.log(session.accessToken);
 
   if (url.searchParams.get("shop")) {
     throw redirect(`/app?${url.searchParams.toString()}`);
