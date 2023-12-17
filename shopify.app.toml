@@ -1,28 +1,28 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "nrf-2024-drops"
+name = "NRF Drops"
 client_id = "a03e0dfa08ce8fc3eca4bf5f9de19cd1"
-application_url = "https://wto-ds-outputs-tray.trycloudflare.com"
+application_url = "https://changelog-basin-lindsay-gene.trycloudflare.com"
 embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "write_products,read_metaobjects"
 
 [auth]
 redirect_urls = [
-  "https://wto-ds-outputs-tray.trycloudflare.com/auth/callback",
-  "https://wto-ds-outputs-tray.trycloudflare.com/auth/shopify/callback",
-  "https://wto-ds-outputs-tray.trycloudflare.com/api/auth/callback",
-  "https://wto-ds-outputs-tray.trycloudflare.com/.shopify/graphiql/auth/callback",
-  "http://localhost:8080/callback",
+  "https://changelog-basin-lindsay-gene.trycloudflare.com/auth/callback",
+  "https://changelog-basin-lindsay-gene.trycloudflare.com/auth/shopify/callback",
+  "https://changelog-basin-lindsay-gene.trycloudflare.com/api/auth/callback",
+  "https://changelog-basin-lindsay-gene.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]
-api_version = "2023-10"
+api_version = "2024-01"
 
 [pos]
 embedded = false
 
 [build]
+automatically_update_urls_on_dev = true
 dev_store_url = "nrf-2024-chrishannaby-dev.myshopify.com"

@@ -9,8 +9,8 @@ import { authenticate } from "../shopify.server";
 export const links = () => [{ rel: "stylesheet", href: polarisStyles }];
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  await authenticate.admin(request);
-
+  const { session } = await authenticate.admin(request);
+  console.log(session.accessToken);
   return json({ apiKey: process.env.SHOPIFY_API_KEY || "" });
 };
 
@@ -23,7 +23,6 @@ export default function App() {
         <Link to="/app" rel="home">
           Home
         </Link>
-        <Link to="/app/additional">Additional page</Link>
       </ui-nav-menu>
       <Outlet />
     </AppProvider>
