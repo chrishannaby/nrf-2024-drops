@@ -12,5 +12,5 @@ schema = "../dropSchema.graphql"
   key = "Drop"
 
   [[settings.fields]]
-  type = "schema.Klayvio"
-  key = "Klayvio"
+  type = "schema.Klaviyo"
+  key = "Klaviyo"

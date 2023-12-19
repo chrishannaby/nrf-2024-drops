@@ -8,7 +8,7 @@ type Drop {
   products: [Product!]!
 }
 
-type Klayvio {
+type Klaviyo {
   templateId: String!
   apiKey: String!
   listId: String!
