@@ -7,3 +7,9 @@ type Drop {
   name: String!
   products: [Product!]!
 }
+
+type Klayvio {
+  templateId: String!
+  apiKey: String!
+  listId: String!
+}

@@ -12,5 +12,5 @@ schema = "../dropSchema.graphql"
   key = "Drop"
 
   [[settings.fields]]
-  type = "single_line_text_field"
-  key = "Klayvio Template ID"
+  type = "schema.Klayvio"
+  key = "Klayvio"
