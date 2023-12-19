@@ -2,19 +2,16 @@
 
 name = "NRF Drops"
 client_id = "a03e0dfa08ce8fc3eca4bf5f9de19cd1"
-application_url = "https://changelog-basin-lindsay-gene.trycloudflare.com"
+application_url = "https://nrf-2024-drops.fly.dev"
 embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products,read_metaobjects"
+scopes = "write_products,read_metaobjects,write_metaobjects"
 
 [auth]
 redirect_urls = [
-  "https://changelog-basin-lindsay-gene.trycloudflare.com/auth/callback",
-  "https://changelog-basin-lindsay-gene.trycloudflare.com/auth/shopify/callback",
-  "https://changelog-basin-lindsay-gene.trycloudflare.com/api/auth/callback",
-  "https://changelog-basin-lindsay-gene.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://nrf-2024-drops.fly.dev/auth/callback"
 ]
 
 [webhooks]
@@ -24,5 +21,5 @@ api_version = "2024-01"
 embedded = false
 
 [build]
-automatically_update_urls_on_dev = true
+automatically_update_urls_on_dev = false
 dev_store_url = "nrf-2024-chrishannaby-dev.myshopify.com"

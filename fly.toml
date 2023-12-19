@@ -12,7 +12,7 @@ primary_region = "ord"
   PORT = "3000"
   SHOPIFY_APP_URL = "https://nrf-2024-drops.fly.dev"
   SHOPIFY_API_KEY = "a03e0dfa08ce8fc3eca4bf5f9de19cd1"
-  SCOPES = "write_products,read_metaobjects"
+  SCOPES = "write_products,read_metaobjects,write_metaobjects"
   DATABASE_URL = "file:/data/sqlite.db"
 
 [http_service]
