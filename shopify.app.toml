@@ -1,20 +1,25 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "NRF Drops"
 client_id = "a03e0dfa08ce8fc3eca4bf5f9de19cd1"
-application_url = "https://chem-oven-leaders-vacation.trycloudflare.com"
+name = "NRF Drops"
+application_url = "https://bow-freely-resume-debt.trycloudflare.com"
 embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "nrf-2024-chrishannaby-dev.myshopify.com"
+include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products,read_metaobjects,write_metaobjects"
+scopes = "read_draft_orders,read_metaobjects,write_metaobjects,write_products"
 
 [auth]
 redirect_urls = [
-  "https://chem-oven-leaders-vacation.trycloudflare.com/auth/callback",
-  "https://chem-oven-leaders-vacation.trycloudflare.com/auth/shopify/callback",
-  "https://chem-oven-leaders-vacation.trycloudflare.com/api/auth/callback",
-  "https://chem-oven-leaders-vacation.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://bow-freely-resume-debt.trycloudflare.com/auth/callback",
+  "https://bow-freely-resume-debt.trycloudflare.com/auth/shopify/callback",
+  "https://bow-freely-resume-debt.trycloudflare.com/api/auth/callback",
+  "https://bow-freely-resume-debt.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]
@@ -22,7 +27,3 @@ api_version = "2024-01"
 
 [pos]
 embedded = false
-
-[build]
-automatically_update_urls_on_dev = true
-dev_store_url = "nrf-2024-chrishannaby-dev.myshopify.com"
