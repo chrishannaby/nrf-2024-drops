@@ -1,0 +1,15 @@
+[[extensions]]
+name = "Order Approval Status Changed"
+type = "flow_trigger"
+handle = "approval-status-changed"
+description = "Triggers when the approval status of a draft order is updated"
+
+[settings]
+
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "Draft Order ID"
+
+  [[settings.fields]]
+  type = "number_decimal"
+  key = "Auto Approve Threshold"

@@ -2,7 +2,7 @@
 
 name = "NRF Drops"
 client_id = "a03e0dfa08ce8fc3eca4bf5f9de19cd1"
-application_url = "https://nrf-2024-drops.fly.dev"
+application_url = "https://chem-oven-leaders-vacation.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,7 +11,10 @@ scopes = "write_products,read_metaobjects,write_metaobjects"
 
 [auth]
 redirect_urls = [
-  "https://nrf-2024-drops.fly.dev/auth/callback"
+  "https://chem-oven-leaders-vacation.trycloudflare.com/auth/callback",
+  "https://chem-oven-leaders-vacation.trycloudflare.com/auth/shopify/callback",
+  "https://chem-oven-leaders-vacation.trycloudflare.com/api/auth/callback",
+  "https://chem-oven-leaders-vacation.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]
@@ -21,5 +24,5 @@ api_version = "2024-01"
 embedded = false
 
 [build]
-automatically_update_urls_on_dev = false
+automatically_update_urls_on_dev = true
 dev_store_url = "nrf-2024-chrishannaby-dev.myshopify.com"
